@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Simple AI Chat Bot Demo with Web Speech API">
+    <meta name="author" content="Tomomi Imura  @girlie_mac">
+
+    <title>Simple AI Demo with Web Speech API</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    
+
+  </head>
+
+  <body>
+      <div class="card-panel teal darken-1" style="color: #e0f2f1">
+       
+          <h5 style="font-family: MV Boli; font-size: 50px; text-align: center">Diya</h5> <!-- <h5 style="float: right;">Team MIKO</h5>  -->
+          <h6 style="text-align:center">Virtual Information Assistant</h6>
+        
+         
+      </div>
+    <section>
+           
+      <!-- <div>
+          <input type="text" name="chat" id="chatbox" placeholder="Hi there! Type here to talk to me.">
+      </div> -->
+    <div id='chatborder'>
+      <div>
+        <h6>Talk to Me!</h6>
+        <hr>
+        </div>
+    <p id="chatlog7" class="chatlog">&nbsp;</p>
+    <p id="chatlog6" class="chatlogs">&nbsp;</p>
+    <p id="chatlog5" class="chatlog">&nbsp;</p>
+    <p id="chatlog4" class="chatlogs">&nbsp;</p>
+    <p id="chatlog3" class="chatlog">&nbsp;</p>
+    <p id="chatlog2" class="chatlogs">&nbsp;</p>
+    <p id="chatlog1" class="chatlog">&nbsp;</p>
+    <div class="msgs">
+        <input type="text" name="chat" id="chatbox" placeholder="Hi! Type here to talk to me." onfocus="placeHolder()">
+        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+        <div style="padding-left: 10px"><button><i class="fa fa-microphone"></i></button></div>
+        
+    </div> 
+  </div>
+  <div>
+      <em class="output-you">...</em>
+     <em class="output-bot">...</em>
+ </div> 
+
+    </section>
+
+    
+    
+      <!-- <div id='chatborder'>
+        <p id="chatlog7" class="chatlog">&nbsp;</p>
+        <p id="chatlog6" class="chatlog">&nbsp;</p>
+        <p id="chatlog5" class="chatlog">&nbsp;</p>
+        <p id="chatlog4" class="chatlog">&nbsp;</p>
+        <p id="chatlog3" class="chatlog">&nbsp;</p>
+        <p id="chatlog2" class="chatlog">&nbsp;</p>
+        <p id="chatlog1" class="chatlog">&nbsp;</p>
+        <input type="text" name="chat" id="chatbox" placeholder="Hi there! Type here to talk to me." onfocus="placeHolder()">
+      </div> -->
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
